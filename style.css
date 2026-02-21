@@ -111,7 +111,7 @@ header{
 /* Hero */
 
 .hero {
-    background: linear-gradient(100deg, #0f1a2f 0%, #1e3a5f 100%), url('https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1800&auto=format&fit=crop'); /* тёмный слой + фон */
+    background: linear-gradient(100deg, #0f1a2f 0%, #1e3a5f 100%);
     background-size: cover;
     background-blend-mode: overlay;
     background-position: center 40%;
@@ -407,4 +407,146 @@ hr {
 .breadcrumbs span {
     font-weight: 500;
     color: #1e293b;
+}
+
+/* about.html */
+
+.about-intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 40px 0 40px;
+    background: white;
+    border-radius: 48px;
+    padding: 48px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.02);
+    border: 1px solid #eef2f6;
+}
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+.about-text h3 {
+    font-size: 26px;
+    margin: 20px 0 15px;
+    color: #0b1b33;
+}
+.about-text p {
+    font-size: 18px;
+    color: #334155;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.stats-grid {
+    flex: 1;
+    min-width: 220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-content: start;
+}
+.stat-item {
+    background: #f0f6ff;
+    border-radius: 30px;
+    padding: 25px 15px;
+    text-align: center;
+}
+.stat-number {
+    font-size: 40px;
+    font-weight: 800;
+    color: #2a7de1;
+    line-height: 1.2;
+}
+.stat-label {
+    font-size: 16px;
+    color: #1e3a5f;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin: 40px 0 40px;
+}
+.team-card {
+    background: white;
+    border-radius: 32px;
+    padding: 32px 24px 28px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.03);
+    border: 1px solid #f0f3f8;
+    text-align: center;
+    transition: 0.25s ease;
+}
+.team-card:hover {
+    transform: translateY(-6px);
+    border-color: #d9e3f0;
+    box-shadow: 0 30px 45px rgba(42,125,225,0.08);
+}
+.team-avatar {
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(145deg, #e6edf8, #d2def0);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #2a7de1;
+    border: 4px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.team-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.team-position {
+    font-size: 18px;
+    color: #2a7de1;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.team-desc {
+    color: #5f6c80;
+    font-size: 15px;
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0 50px;
+}
+.benefit-card {
+    background: white;
+    border-radius: 32px;
+    padding: 32px 28px;
+    border: 1px solid #edf2f9;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.02);
+    transition: 0.2s;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.benefit-card:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 15px 30px rgba(42,125,225,0.08);
+}
+.benefit-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #2c7cdd, #4b18b1, #74051d);
+    background-clip: text;
+    color: transparent;
+}
+.benefit-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.benefit-content p {
+    color: #4a5a72;
+    font-size: 16px;
 }
