@@ -217,6 +217,32 @@ header{
     margin-bottom: 18px;
 }
 
+.product-card span{
+    display: inline-block;
+    background-color: #dc2626;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 6px 18px;
+    border-radius: 40px;
+    margin-bottom: 16px;
+    align-self: flex-start;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(220,38,38,0.2);
+}
+
+.product-reviews{
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.product-reviews i{
+    color: #f5b342;
+    margin-right: 6px;
+}
+
 .product-card .btn{
     padding: 12px 0;
     font-size: 16px;
@@ -363,4 +389,22 @@ hr {
     align-items: center;
     gap: 18px;
     margin-bottom: 18px;
+}
+
+
+
+/* catalog.html */
+
+.breadcrumbs {
+    padding: 24px 0 12px;
+    font-size: 15px;
+    color: #5f6c80;
+}
+.breadcrumbs a {
+    color: #2a7de1;
+    text-decoration: none;
+}
+.breadcrumbs span {
+    font-weight: 500;
+    color: #1e293b;
 }
